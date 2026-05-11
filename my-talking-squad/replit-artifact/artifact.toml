@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "My Talking Squad"
+version = "1.0.0"
+id = "artifacts/my-talking-squad"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22831
+
+[services.development]
+run = "pnpm --filter @workspace/my-talking-squad run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/my-talking-squad", "run", "build" ]
+publicDir = "artifacts/my-talking-squad/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22831"
+BASE_PATH = "/"
