@@ -12,11 +12,14 @@ export default defineConfig({
     },
   },
 
-  assetsInclude: ['**/*.mpeg'],
-
-  build: {
-    rollupOptions: {
-      external: [],
-    },
-  },
+  assetsInclude: [
+    '**/*.mpeg',
+    '**/*.mp3',
+    '**/*.wav',
+    '**/*.png',
+    '**/*.jpg',
+    '**/*.jpeg',
+    '**/*.svg',
+    '**/*.gif'
+  ],
 })
