@@ -1,0 +1,545 @@
+Perfect — I’ve taken all your changes and **cleanly integrated them into your master prompt** without breaking the system. This is your **UPDATED FINAL PROMPT (v2 – refined behavior & UI)** 👇
+
+---
+
+# 🦜🔥 MASTER PROMPT — **MY TALKING SQUAD (UPDATED FINAL v2)**
+
+Create a **fully responsive, high-performance interactive web application** called:
+
+# 🎮 **“My Talking Squad”**
+
+A **Talking Tom–style virtual parrot pet** optimized for:
+
+* 💻 Desktop
+* 📱 Mobile
+* 📲 PWA + App-ready
+
+---
+
+# 🎯 CORE FUNCTIONALITY
+
+* Real-time voice recording + playback 🎤
+* Parrot-style voice effect (thin/chirpy voice) 🦜
+* Instant interactions (no delay) ⚡
+* Clean animations + professional UI 🎮
+
+---
+
+# 🎤 1. VOICE SYSTEM (UPDATED)
+
+### Behavior:
+
+* No mic button
+* On first tap → request permission
+* Then auto listening
+
+---
+
+### Playback Rules:
+
+* `playbackRate = 1.0` ✅ (normal speed)
+* `preservesPitch = false`
+* Apply **higher pitch (thin/chirpy like parrot)** using Web Audio API
+
+👉 Voice should sound:
+
+* Sharp
+* Slightly high-pitched
+* Like “cheemp cheemp” style
+
+---
+
+# 🎬 2. INTRO + EGG FLOW
+
+(Same as before — no changes)
+
+---
+
+# 🦜 3. PARROT STATES
+
+* Idle
+* Listening
+* Speaking (mouth animation synced)
+* Blink every 2 sec
+
+---
+
+# 🎮 4. INTERACTIONS (REFINED)
+
+### 🎯 Tap Areas (STRICT ACCURACY)
+
+* Head → ONLY head area
+* Stomach → ONLY stomach area
+* Wings → ONLY wings
+
+👉 Use precise hitboxes (no overlap)
+
+---
+
+### ⚡ PERFORMANCE FIX
+
+* Remove any delay when clicking
+* All interactions must trigger **instantly**
+
+---
+
+### 🎭 Effects
+
+#### Head Click:
+
+* Show `dizzy.png` + stars
+* Play sound
+* ✅ **Keep effect active UNTIL audio ends**
+
+---
+
+#### Stomach Click:
+
+* Show `stop.png` + sound
+
+---
+
+#### Wings Click:
+
+* Show `wings.png`
+
+---
+
+# 🎥 5. ACTIVITY BUTTONS (PRO UI UPDATE)
+
+Buttons:
+
+* Feed
+* Party
+* Undress
+* Sleep
+
+### UI Rules:
+
+* ❌ No emojis
+* ✅ Use **high-quality icon images**
+* ✅ Modern circular or glass UI
+* ✅ Smooth hover + press animation
+
+---
+
+### 🎥 Video Behavior
+
+* Feed & Party:
+
+  * Play MP4 fullscreen
+  * ✅ Size must be **100% exact**
+  * ❌ No zoom
+  * ❌ No shrink
+  * Must fit perfectly
+
+---
+
+# 🌤️ 6. BACKGROUND SYSTEM (SIMPLIFIED)
+
+### Only ONE background:
+
+* Sky background
+* Sun at top-left
+* Moving clouds animation
+
+---
+
+### 🌙 Sleep Mode:
+
+* Sun → transforms into Moon
+* Clouds → transform into Stars
+* Background → day → night transition
+
+---
+
+### 💤 Sleep Effects:
+
+* Bird blinking
+* `zzzzzz` near **beak (mouth area)**
+* Sleep audio
+
+---
+
+# 👕 7. UNDRESS FEATURE
+
+(Same logic as before — keep bikini popup)
+
+---
+
+# 🏪 8. SKINS SYSTEM (UPDATED)
+
+### Rename:
+
+* ❌ Store
+* ✅ **Skins**
+
+---
+
+### Features:
+
+* Only **4 items**
+* Images will be provided later
+
+---
+
+### 💰 Pricing:
+
+* 500 Eggs
+* 100 MON
+
+---
+
+### 🧥 Apply Logic:
+
+* On purchase → show Apply popup
+* Apply overlays on bird
+* ❌ No overlapping clothes
+* Always remove previous first
+
+---
+
+# 💰 9. ECONOMY SYSTEM (UPDATED)
+
+### ❌ REMOVE:
+
+* Auto eggs every 10 sec
+* 10 eggs per interaction
+
+---
+
+### ✅ NEW RULE:
+
+* Only:
+  👉 **+5 eggs per interaction**
+
+---
+
+### UI:
+
+* Show total eggs (top-right)
+
+---
+
+# 🔗 10. CRYPTO PAYMENT
+
+* Same ethers.js flow
+* 100 MON per item
+* Wallet popup handled externally
+
+---
+
+# 🎞️ 11. ANIMATION RULES (STRICT)
+
+* ❌ No overlapping visuals
+* Always:
+
+  1. Remove previous
+  2. Show next
+
+---
+
+### ⏱️ Timing:
+
+* Image duration = audio duration
+* No delay
+* No extra time
+
+---
+
+# ⚡ 12. PERFORMANCE RULES
+
+* Zero lag interactions
+* Instant response
+* Smooth transitions
+
+---
+
+# 📱 13. CROSS PLATFORM
+
+* Works on:
+
+  * PC
+  * Android
+  * iOS (optimized fallback)
+
+---
+
+# 📦 14. PROJECT STRUCTURE
+
+```
+index.html
+style.css
+script.js
+/assets
+   /images
+   /audio
+   /videos
+```
+
+---
+
+# 🚫 15. STRICT RULES
+
+* ❌ No TTS
+* ❌ No SpeechSynthesis
+* ❌ No AI voice
+* ✅ Only MediaRecorder + Audio APIs
+
+---
+
+# 🚀 FINAL RESULT
+
+The app should feel like:
+
+👉 A **premium Talking Tom–style parrot game**
+👉 With **instant reactions + pro UI + smooth animations + skins system + Web3 payments**
+👉 Fully optimized for **PC + Mobile + App**
+
+---
+
+
+
+Perfect — this is an important animation detail. I’ve added it properly into your prompt as a **dedicated speaking animation rule** 👇
+
+---
+
+# 🦜🎙️ 16. SPEAKING ANIMATION (MOUTH MOVEMENT – FAST SWITCH)
+
+### 🎯 Goal
+
+Make the parrot look like it is **actually speaking** by simulating mouth movement.
+
+---
+
+### 🔁 Behavior
+
+During audio playback:
+
+* Rapidly switch between:
+
+  * `body.png` (default)
+  * `mouth_open.png` (mouth open)
+
+---
+
+### ⚡ Speed Requirement
+
+* Animation must be **very fast**
+* Suggested interval:
+
+  * **60ms – 120ms loop**
+
+👉 This creates a realistic **talking effect**
+
+---
+
+### ⏱️ Timing Rules
+
+* Start animation **exactly when audio starts**
+* Stop animation **immediately when audio ends**
+* No delay before or after
+
+---
+
+### 🧠 Logic Rules
+
+* Do NOT overlap images
+* Always:
+
+  1. Remove current frame
+  2. Show next frame
+
+---
+
+### 🔊 Sync Rule (IMPORTANT)
+
+* Animation must feel synced with speech:
+
+  * Faster switching = better realism
+* Optional:
+
+  * Slight randomness in interval (natural feel)
+
+---
+
+### ⚠️ Performance Rule
+
+* Use lightweight loop (`setInterval` or `requestAnimationFrame`)
+* Ensure:
+
+  * No lag
+  * No flicker
+  * No frame drop
+
+---
+
+### 🎯 Final Effect
+
+👉 Parrot appears to:
+
+* Open/close mouth rapidly
+* Speak naturally like Talking Tom
+* Stay perfectly synced with audio
+
+
+
+Perfect — this is the **final piece for true cross-platform polish**. I’ve added it as a **professional device-adaptive system** into your prompt 👇
+
+---
+
+# 📱💻 17. AUTO DEVICE DETECTION & ADAPTIVE LAYOUT SYSTEM
+
+### 🎯 Goal
+
+The app must **automatically detect whether the user is on PC or Mobile** and adjust:
+
+* Layout
+* Button placement
+* Bird position
+* Interaction zones
+
+👉 **No manual toggle required**
+
+---
+
+## 🧠 DEVICE DETECTION
+
+Use JavaScript to detect device type:
+
+* Mobile → small screen + touch
+* Desktop → larger screen + mouse
+
+### Detection Rules:
+
+* Use:
+
+  * `window.innerWidth`
+  * `navigator.userAgent`
+  * Touch support check
+
+---
+
+## 📐 RESPONSIVE LAYOUT SYSTEM
+
+### 💻 DESKTOP MODE
+
+* Bird:
+
+  * Center of screen (slightly lower vertical center)
+* Buttons:
+
+  * Left side → 2 buttons (Feed, Party)
+  * Right side → 2 buttons (Undress, Sleep)
+* Larger spacing
+* Hover effects enabled
+
+---
+
+### 📱 MOBILE MODE
+
+* Bird:
+
+  * Slightly lower (thumb-friendly view)
+* Buttons:
+
+  * Bottom aligned OR side compact layout
+* Bigger buttons for touch
+* No hover (use tap animations)
+
+---
+
+## 🔄 AUTO SWITCH BEHAVIOR
+
+* Layout must update:
+
+  * On page load
+  * On screen resize
+
+👉 Example:
+
+* Desktop → shrink window → switch to mobile layout instantly
+
+---
+
+## 🎯 BIRD POSITION ADAPTATION
+
+* Maintain:
+
+  * Perfect center alignment (horizontal)
+* Adjust:
+
+  * Vertical position based on screen height
+
+---
+
+## 🎮 INTERACTION ZONE SCALING
+
+* Head, stomach, wings hitboxes must:
+
+  * Scale with screen size
+  * Stay correctly aligned with bird
+
+👉 No mis-clicks on mobile
+
+---
+
+## 🎨 UI ADAPTATION RULES
+
+* Buttons:
+
+  * Resize proportionally
+* Text:
+
+  * Scale based on screen
+* Maintain consistent spacing
+
+---
+
+## ⚡ PERFORMANCE RULES
+
+* No layout flicker while switching
+* Smooth transitions
+* No reflow lag
+
+---
+
+## 🧩 IMPLEMENTATION APPROACH
+
+* Use:
+
+  * CSS Media Queries (primary)
+  * JS for fine control
+
+---
+
+### Example Breakpoint:
+
+* Mobile:
+
+  * `max-width: 768px`
+* Desktop:
+
+  * `min-width: 769px`
+
+---
+
+## 🎯 FINAL RESULT
+
+* App feels **native on both PC & mobile**
+* No UI breaking
+* No overlapping
+* Perfect alignment everywhere
+
+---
+
+# 💥 FINAL ADDITION COMPLETE
+
+Now your app includes:
+
+* ✅ Auto device detection
+* ✅ Adaptive layout system
+* ✅ Perfect cross-platform behavior
+
+---
+
